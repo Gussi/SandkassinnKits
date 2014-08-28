@@ -6,7 +6,10 @@ import java.util.HashMap;
 import net.Plommer.SandkassinnKits.Commands.BaseCommand;
 import net.Plommer.SandkassinnKits.Commands.CommandHandler;
 import net.Plommer.SandkassinnKits.Commands.KitsCommand;
+<<<<<<< HEAD
 import net.Plommer.SandkassinnKits.Commands.ListCommand;
+=======
+>>>>>>> 63e73173b77de7be48616d534cdef148d05e574b
 import net.Plommer.SandkassinnKits.Configs.GenerateConfigs;
 import net.Plommer.SandkassinnKits.Listenners.JoinEvent;
 import net.Plommer.SandkassinnKits.Utils.BookReader;
@@ -39,7 +42,10 @@ public class SandkassinnKits extends JavaPlugin {
 	}
 	
 	private void registerCommands() {
+<<<<<<< HEAD
 		commands.add(new ListCommand());
+=======
+>>>>>>> 63e73173b77de7be48616d534cdef148d05e574b
 		commands.add(new KitsCommand());
 	}
 	
