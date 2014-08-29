@@ -1,0 +1,9 @@
+name: SandkasinnKits
+author: TheNokar
+version: 0.1
+softdepend: [Essentials, CommandBook]
+main: net.Plommer.SandkassinnKits.SandkassinnKits
+commands:
+    kits:
+        description: Kits commands
+        aliases: [kit]
