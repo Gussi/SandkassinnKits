@@ -63,11 +63,7 @@ public abstract class BaseCommand {
 	public abstract boolean execute();
 	
 	public void sendUsage() {
-<<<<<<< HEAD
 		Utils.sendMessage(sender, "&c/" + this.usedCmd + " " +this.usage);
-=======
-		Utils.sendMessage(sender, "&c/s" + this.usedCmd + " " +this.usage);
->>>>>>> 63e73173b77de7be48616d534cdef148d05e574b
 	}
 	
 	public String permission() {
