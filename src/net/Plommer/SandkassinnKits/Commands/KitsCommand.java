@@ -14,6 +14,10 @@ public class KitsCommand extends BaseCommand {
 	}	
 	@Override
 	public boolean execute() {
+		if(!sender.hasPermission("sandkassinnkits." + args.get(0))) {
+			Utils.sendMessage(sender, "&cYou don'ts have permission to do that!");
+			return false;
+		}
 		if(plugin.kitsList.containsKey(args.get(0).toLowerCase())) {
 			Kits kits = plugin.kitsList.get(args.get(0).toLowerCase());
 			for(ItemStack item : kits.getItems()) {

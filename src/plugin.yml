@@ -7,3 +7,10 @@ commands:
     kits:
         description: Kits commands
         aliases: [kit]
+permissions:
+    sandkassinnkits.*:
+        default: op
+        description: Give players with op everything by default
+    sandkassinnkits.default:
+        default: op
+        description: test
