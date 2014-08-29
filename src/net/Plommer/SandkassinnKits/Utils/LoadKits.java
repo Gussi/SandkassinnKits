@@ -17,10 +17,10 @@ public class LoadKits {
 	@SuppressWarnings("deprecation")
 	public LoadKits(SandkassinnKits plugin) {
 		for(String id : plugin.config.getConfigurationSection("kits").getKeys(false)) {
-			HashMap<Enchantment, Integer> effects = new HashMap<Enchantment, Integer>();
-			ArrayList<ItemStack> items = new ArrayList<ItemStack>();
 			FileConfiguration config = plugin.config;
 			for(String item : config.getStringList("kits." +id + ".items")) {
+				HashMap<Enchantment, Integer> effects = new HashMap<Enchantment, Integer>();
+				ArrayList<ItemStack> items = new ArrayList<ItemStack>();
 				String[] iteml = item.split(" ");
 				if(iteml[0].equalsIgnoreCase("book")) {
 					items.add(plugin.br.ReaderBook(iteml[1]));
